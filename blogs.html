@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blogs - adarsh</title>
+    <meta name="description" content="adarsh's blogs" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        padding: 2rem;
+      }
+
+      .blog-list {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .blog-item {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: var(--text-color);
+        text-decoration: none;
+        position: relative;
+        width: fit-content;
+      }
+
+      .blog-item::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 2px;
+        width: 100%;
+        background-color: var(--text-color);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+
+      .blog-item:hover::after {
+        transform: scaleX(1);
+      }
+
+      .blog-item:hover {
+        color: var(--accent-color, #f50202);
+      }
+
+      .dot {
+        margin-right: 0.5rem;
+        color: var(--text-color);
+        font-weight: bold;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 1rem;
+        }
+
+        header {
+          padding: 1rem;
+          margin-bottom: 0;
+        }
+
+        .blog-item {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="profile">
+        <a href="index.html">
+          <img src="img.jpeg" alt="adarsh's photo" class="profile-img" />
+          <h1 class="site-title">adarsh</h1>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">about</a>
+        <a href="blogs.html" class="nav-link active">blogs</a>
+        <a href="bookshelf.html" class="nav-link">bookshelf</a>
+      </nav>
+    </header>
+
+    <main>
+  <div class="blog-list">
+    <a href="blogs/note-to-self.html" class="blog-item"><span class="dot">•</span> note to self</a>
+    <a href="blogs/from-shenoys-pen.html" class="blog-item"><span class="dot">•</span> from shenoy’s pen: life is what you make it</a>
+    <a href="blogs/the-void.html" class="blog-item"><span class="dot">•</span> from shenoy’s pen: the void</a>
+    <a href="blogs/codeforces-worth.html" class="blog-item"><span class="dot">•</span> explore codeforces worth</a>
+  </div>
+</main>
+    </main>
+  </body>
+</html>
