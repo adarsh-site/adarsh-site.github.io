@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>he who knows</title>
+    <meta
+      name="description"
+      content="he who knows"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      main {
+        max-width: 700px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      .blog-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .blog-date {
+        font-size: 0.9rem;
+        color: gray;
+        margin-bottom: 2rem;
+      }
+
+      .blog-content p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+
+      .back-link {
+        font-weight: 600;
+        color: var(--text-color);
+        text-decoration: none;
+        font-family: "Space Mono", monospace;
+        transition: color 0.25s ease;
+      }
+
+      .back-link:hover {
+        color: var(--accent-color, #555);
+        text-decoration: underline;
+      }
+
+      .link {
+        background-color: #010101;
+        color: white;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        border-radius: 0.75rem;
+        font-weight: 500;
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: 600px) {
+        .blog-title {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2 class="blog-title">he who knows</h2>
+      <div class="blog-date">🛠️ published: november 20, 2022</div>
+
+      <div class="blog-content">
+        <p>he who knows not and knows not that he knows not is a fool, <br>shun him.</p>
+        <p>he who knows not and knows that he knows not is simple, <br>teach him.</p>
+        <p>he who knows and knows not that he knows is asleep, <br>wake him.</p>
+        <p>he who knows and knows that he knows is an intellectual, <br>follow him.</p>
+      </div>
+
+      <p style="margin-top: 3rem">
+        <a href="../blogs.html" class="back-link">← back to blogs</a>
+      </p>
+    </main>
+  </body>
+</html>
